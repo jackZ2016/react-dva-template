@@ -17,7 +17,7 @@ function RouterConfig({ history, app }) {
               path="/"
               render={props => <BasicLayout {...props} />}
               authority={['admin', 'user']}
-              redirectPath="/user/login"
+              redirectPath="/"
             />
       </Switch>
     </ConnectedRouter>
