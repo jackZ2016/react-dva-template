@@ -71,7 +71,7 @@ export const getRouterData = (app) => {
   const routerConfig = {
     '/': {
       component: dynamicWrapper(app, [], () => import('../layouts/BasicLayout')),
-    },
+    }
   };
   // Get name from ./menu.js or just set it in the router data.
   const menuData = getFlatMenuData(getMenuData());

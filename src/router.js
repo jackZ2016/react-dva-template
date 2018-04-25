@@ -14,11 +14,11 @@ function RouterConfig({ history, app }) {
     <ConnectedRouter history={history}>
       <Switch>
         <AuthorizedRoute
-              path="/"
-              render={props => <BasicLayout {...props} />}
-              authority={['admin', 'user']}
-              redirectPath="/user/login"
-            />
+          path="/"
+          render={props => <BasicLayout {...props} />}
+          authority="guest"
+          redirectPath="/user/login"
+        />
       </Switch>
     </ConnectedRouter>
   );
