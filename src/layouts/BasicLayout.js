@@ -123,7 +123,7 @@ class BasicLayout extends React.PureComponent {
     );
 
     return (
-      <DocumentTitle title='title'>
+      <DocumentTitle title='zhuku'>
         <ContainerQuery query={query}>
           {params => <div className={classNames(params)} style={{ height: '100%' }}>{layout}</div>}
         </ContainerQuery>
